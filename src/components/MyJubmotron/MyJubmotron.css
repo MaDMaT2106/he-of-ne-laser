@@ -1,0 +1,62 @@
+.my-jumbotron {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.modal-image {
+  width: 250px;
+  max-height: 290px;
+}
+.info-button {
+  width: 100px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 16px !important;
+}
+.button {
+  width: 240px;
+  font-size: 1.75rem !important;
+}
+.turn-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.turn-block p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.turn-switch {
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn {
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px !important;
+}
+
+@media (max-width: 993px) {
+  .my-jumbotron {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .my-jumbotron-container {
+    width: 100%;
+    position: static;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .info-button,
+  .start-btn {
+    margin: 0;
+  }
+}

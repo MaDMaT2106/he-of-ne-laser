@@ -1,0 +1,7 @@
+.main-part {
+  position: relative;
+  background-color: #ffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-bottom: 200px;
+}

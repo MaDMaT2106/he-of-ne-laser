@@ -1,0 +1,89 @@
+.screen {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.screen-container {
+  width: 100%;
+}
+.screen-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.ruler-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 200px; */
+}
+
+.ruler span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.ruler {
+  background: lightYellow;
+  box-shadow: 0 -1px 1em hsl(60, 60%, 84%) inset;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  margin: 0;
+  height: 6em;
+  width: 85%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.ruler span {
+  width: 2em;
+  margin: 0.64em -1em -0.64em;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px hsl(60, 60%, 84%);
+}
+.ruler span:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #ccc;
+  height: 0.64em;
+  top: -0.64em;
+}
+
+.red-dot {
+  /* position: absolute; */
+  color: red;
+  font-size: 40px;
+  line-height: 20px;
+  z-index: 10;
+  opacity: 0.7;
+}
+.values {
+  display: inline;
+  margin-right: 5px;
+}
+/* .values-block {
+  transform: translate3d(600px, 0px, 0px);
+} */
+.laser {
+  position: relative;
+}
+
+.off-state {
+  /* visibility: hidden; */
+}
+
+@media (max-width: 993px) {
+  .ruler {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 765px) {
+  .ruler {
+    gap: 14px;
+  }
+}
